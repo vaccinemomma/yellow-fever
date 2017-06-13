@@ -1,0 +1,24 @@
+[1] "yellowFever.csv" "AR"             
+[1] "AR1 model, global data"
+
+Call:
+lm(formula = incidence ~ coverage + prev_incidence + prev_coverage)
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-9.548e-06 -1.191e-06 -1.137e-06 -9.360e-07  6.238e-05 
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)   
+(Intercept)     1.153e-06  8.028e-07   1.436   0.1517   
+coverage        1.151e-06  2.994e-06   0.384   0.7010   
+prev_incidence  1.314e-01  4.574e-02   2.872   0.0043 **
+prev_coverage  -1.166e-06  2.870e-06  -0.406   0.6847   
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 6.091e-06 on 394 degrees of freedom
+Multiple R-squared:  0.0208,	Adjusted R-squared:  0.01335 
+F-statistic:  2.79 on 3 and 394 DF,  p-value: 0.04033
+
+[1] "AR hierarchical region DIC:-8425"
